@@ -1,0 +1,107 @@
+.TH "Input" 3 "Вт 29 Дек 2020" "Приложение по учету успеваемости студентов(Клиентская часть)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Input
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <input\&.h>\fP
+.PP
+Базовые классы:QMainWindow\&.
+.SS "Сигналы"
+
+.in +1c
+.ti -1c
+.RI "void \fBlogin_button_clicked\fP ()"
+.br
+.in -1c
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBInput\fP (QWidget *parent=nullptr)"
+.br
+.ti -1c
+.RI "\fB~Input\fP ()"
+.br
+.ti -1c
+.RI "QString \fBgetLogin\fP ()"
+.br
+.ti -1c
+.RI "QString \fBgetPassword\fP ()"
+.br
+.ti -1c
+.RI "void \fBDisplay\fP ()"
+.br
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "QTcpSocket * \fBsocket\fP"
+.br
+.in -1c
+.SS "Закрытые слоты"
+
+.in +1c
+.ti -1c
+.RI "void \fBon_UserName_textEdited\fP (const QString &arg1)"
+.br
+.ti -1c
+.RI "void \fBon_UserPassword_textEdited\fP (const QString &arg1)"
+.br
+.ti -1c
+.RI "void \fBon_inputButton_clicked\fP ()"
+.br
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "Ui::Input * \fBui\fP"
+.br
+.ti -1c
+.RI "QString \fBUserName\fP"
+.br
+.ti -1c
+.RI "QString \fBUserPassword\fP"
+.br
+.in -1c
+.SH "Конструктор(ы)"
+.PP 
+.SS "Input::Input (QWidget * parent = \fCnullptr\fP)\fC [explicit]\fP"
+
+.SS "Input::~Input ()"
+
+.SH "Методы"
+.PP 
+.SS "void Input::Display ()"
+
+.SS "QString Input::getLogin ()"
+
+.SS "QString Input::getPassword ()"
+
+.SS "void Input::login_button_clicked ()\fC [signal]\fP"
+
+.SS "void Input::on_inputButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.SS "void Input::on_UserName_textEdited (const QString & arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.SS "void Input::on_UserPassword_textEdited (const QString & arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.SH "Данные класса"
+.PP 
+.SS "QTcpSocket* Input::socket"
+
+.SS "Ui::Input* Input::ui\fC [private]\fP"
+
+.SS "QString Input::UserName\fC [private]\fP"
+
+.SS "QString Input::UserPassword\fC [private]\fP"
+
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Приложение по учету успеваемости студентов(Клиентская часть) из исходного текста\&.

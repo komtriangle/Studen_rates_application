@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.0" xml:lang="ru">
+  <compound refid="class_input" kind="class"><name>Input</name>
+    <member refid="class_input_1a24d74156db8ac878481ade2f51e1aab5" kind="variable"><name>socket</name></member>
+    <member refid="class_input_1a137652266dfd2e3a4347a9521f7e50cb" kind="variable"><name>ui</name></member>
+    <member refid="class_input_1af6513e9e9df75b3814f26183f966f4e4" kind="variable"><name>UserName</name></member>
+    <member refid="class_input_1af6c27d8d604ed9809cf947a825871818" kind="variable"><name>UserPassword</name></member>
+    <member refid="class_input_1a167cd1dea1af062f99897a20c597aed8" kind="function"><name>Input</name></member>
+    <member refid="class_input_1af2db35ba67c8a8ccd23bef6a482fc291" kind="function"><name>~Input</name></member>
+    <member refid="class_input_1ab9b0d26950c505ee4b2fea8788db5356" kind="function"><name>getLogin</name></member>
+    <member refid="class_input_1a4e9d31c4cce08515f8c2d844c4bd6b9c" kind="function"><name>getPassword</name></member>
+    <member refid="class_input_1aeca0dffe711827fdf49efd3eb605213a" kind="function"><name>Display</name></member>
+    <member refid="class_input_1a8c19df1be9f5f7618df56401812cc307" kind="signal"><name>login_button_clicked</name></member>
+    <member refid="class_input_1a807c88879b2eb8756dfbc9e35d6add45" kind="slot"><name>on_UserName_textEdited</name></member>
+    <member refid="class_input_1a195c3147dc3806f058cb31a70751af6e" kind="slot"><name>on_UserPassword_textEdited</name></member>
+    <member refid="class_input_1a6f66d977d782d980f904e99c063a8515" kind="slot"><name>on_inputButton_clicked</name></member>
+  </compound>
+  <compound refid="class_main_window" kind="class"><name>MainWindow</name>
+    <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" kind="function"><name>MainWindow</name></member>
+    <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+  </compound>
+  <compound refid="class_rates_page" kind="class"><name>RatesPage</name>
+    <member refid="class_rates_page_1a1bd7da9c89ef70838a5c3ccdb4bb9a6d" kind="variable"><name>socket</name></member>
+    <member refid="class_rates_page_1a3f32548d906f4afb81d48d1c1e9a3bf9" kind="variable"><name>ui</name></member>
+    <member refid="class_rates_page_1a454ef8d593946139b18c8e34cec50ecb" kind="variable"><name>input_window</name></member>
+    <member refid="class_rates_page_1a55b8f059dca9c772ada1832bf5fc614c" kind="function"><name>RatesPage</name></member>
+    <member refid="class_rates_page_1ad1b6d5ea27b150b5da2616bda7e4383b" kind="function"><name>~RatesPage</name></member>
+    <member refid="class_rates_page_1a509b9a571942835ee841b9487d87fc0b" kind="function"><name>Display</name></member>
+    <member refid="class_rates_page_1a7a3f158a2aed3623c406b80396989639" kind="signal"><name>groups_for_add_lesson</name></member>
+    <member refid="class_rates_page_1a1659e8aa5518547660c1fc37d4f9d6db" kind="slot"><name>sockReady</name></member>
+    <member refid="class_rates_page_1aad4bfaa188ac0da32c6e55cd064bb8cd" kind="slot"><name>sockDisc</name></member>
+    <member refid="class_rates_page_1a25386797f2d28e0b5434cae19182615f" kind="slot"><name>on_SaveRateButton_clicked</name></member>
+    <member refid="class_rates_page_1a743060b4e4c782ce80dfe6b0a0381f72" kind="slot"><name>on_choose_group_currentIndexChanged</name></member>
+    <member refid="class_rates_page_1ab2796d5486bcbef2c739cd47a09b363b" kind="slot"><name>on_choose_student_currentIndexChanged</name></member>
+    <member refid="class_rates_page_1a25ab132fb73aa9ed0987b064de2d0e0c" kind="slot"><name>on_choose_course_currentIndexChanged</name></member>
+    <member refid="class_rates_page_1a1fd5a410c75b546c321e65382773c19a" kind="slot"><name>on_choouselesson_currentIndexChanged</name></member>
+    <member refid="class_rates_page_1a5f4dcda4b906d37ca6492d9bd2d681b7" kind="slot"><name>authorizeUser</name></member>
+    <member refid="class_rates_page_1ae8481f453fa76c7ca3437ae6d314d934" kind="slot"><name>get_courses_for_add_lesson</name></member>
+    <member refid="class_rates_page_1aab142efcccffbb46d2206a59fef4a491" kind="slot"><name>get_all_students</name></member>
+    <member refid="class_rates_page_1ade0aa5ce7c2870425ff95b3f55cc33a4" kind="slot"><name>getCoursesForStudent</name></member>
+    <member refid="class_rates_page_1a840439bbcb739d529a7b3cc098486771" kind="slot"><name>getLessonsForStudentAndCourse</name></member>
+    <member refid="class_rates_page_1a2928e25a73f55eb53db54f21a1f46e24" kind="slot"><name>setRateToStudentInGenerallist</name></member>
+    <member refid="class_rates_page_1a8030c0b049e840ffb763a012cdda3f68" kind="slot"><name>on_AddLesoon_triggered</name></member>
+    <member refid="class_rates_page_1ae41f49f98e524812fe8f6c237938b405" kind="slot"><name>on_AddLesson_clicked</name></member>
+    <member refid="class_rates_page_1afd70e1b6761cc02b46c5c496be60612f" kind="slot"><name>on_Main_Page_triggered</name></member>
+    <member refid="class_rates_page_1ad6fbbb73a096b534d99265af26da1d1f" kind="slot"><name>on_GeneralListStudent_triggered</name></member>
+    <member refid="class_rates_page_1a936d00b159f4931f413a201e12010d98" kind="slot"><name>on_ChooseStudent_AllStudent_currentIndexChanged</name></member>
+    <member refid="class_rates_page_1ab2ca1a0206ba0fade967901c68102582" kind="slot"><name>on_ChooesCourse_AllStudent_currentIndexChanged</name></member>
+    <member refid="class_rates_page_1af29e06a15fabe768ad6b3031a0b86e6b" kind="slot"><name>on_ChooseGroupToAddLesson_currentIndexChanged</name></member>
+    <member refid="class_rates_page_1a1c1c3ed508fe448944711fdd792594a4" kind="function"><name>CurrentGroup</name></member>
+    <member refid="class_rates_page_1af7a97d7730bcbf3763a5ffc092f4e8d2" kind="function"><name>CurrentStudent</name></member>
+    <member refid="class_rates_page_1a6006a1c4988800b6dc87d9a97d2e05dc" kind="function"><name>CurrentCourse</name></member>
+    <member refid="class_rates_page_1ae76df48ca6851d2edab9e2b2400577f1" kind="function"><name>CurrentLesson</name></member>
+    <member refid="class_rates_page_1ac1638801b703a4fdc1d8e903a0d43f35" kind="function"><name>CurrentRate</name></member>
+    <member refid="class_rates_page_1a5564bfbcd3e00ee24025c7668fa9ab2f" kind="function"><name>setData</name></member>
+    <member refid="class_rates_page_1accb93388fee5372d89e9d668ba73f5f0" kind="function"><name>getGroups</name></member>
+    <member refid="class_rates_page_1a02adb82a2c9a41ae45f75ca63a414c34" kind="function"><name>getRates</name></member>
+    <member refid="class_rates_page_1a5845567d3fd5139da74960984289b610" kind="function"><name>getLessons</name></member>
+    <member refid="class_rates_page_1abc560de0e714bb6ee40c835e6ad327f1" kind="function"><name>setAllStudents</name></member>
+    <member refid="class_rates_page_1acd8ecc75d214ba5cd26a41ec49088da3" kind="function"><name>setStudents</name></member>
+    <member refid="class_rates_page_1afe765a03a70954ba92aa6d3f65e7c959" kind="function"><name>setRates</name></member>
+    <member refid="class_rates_page_1a628f0e21b7bf4123c6258f03cfefc7af" kind="function"><name>setAllRates</name></member>
+    <member refid="class_rates_page_1ac2b236f3c053a57992de11068111adb0" kind="function"><name>resInput</name></member>
+    <member refid="class_rates_page_1ac8c04d7bc405c0f7776234871dc7f6fe" kind="function"><name>setGroupsForAddLesson</name></member>
+    <member refid="class_rates_page_1a80c42a06fa6fdb49bc4e5013c7aa36bb" kind="function"><name>ResultAddLesson</name></member>
+    <member refid="class_rates_page_1a910d329d4eed321b70c1fb5d2c997fb4" kind="function"><name>ResultSetRate</name></member>
+  </compound>
+  <compound refid="namespace_ui" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="input_8cpp" kind="file"><name>input.cpp</name>
+  </compound>
+  <compound refid="input_8h" kind="file"><name>input.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="rateswindow_8cpp" kind="file"><name>rateswindow.cpp</name>
+  </compound>
+  <compound refid="rateswindow_8h" kind="file"><name>rateswindow.h</name>
+  </compound>
+  <compound refid="dir_f396504afdc959660871b003fa10164d" kind="dir"><name>Documents</name>
+  </compound>
+  <compound refid="dir_9d9ea94a798ef0d951bf7f36e3aa4fa2" kind="dir"><name>Documents/student_rates_client</name>
+  </compound>
+</doxygenindex>

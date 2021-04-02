@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="ru">
+  <compounddef id="dir_9d9ea94a798ef0d951bf7f36e3aa4fa2" kind="dir">
+    <compoundname>Documents/student_rates_client</compoundname>
+    <innerfile refid="input_8cpp">input.cpp</innerfile>
+    <innerfile refid="input_8h">input.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="mainwindow_8cpp">mainwindow.cpp</innerfile>
+    <innerfile refid="mainwindow_8h">mainwindow.h</innerfile>
+    <innerfile refid="rateswindow_8cpp">rateswindow.cpp</innerfile>
+    <innerfile refid="rateswindow_8h">rateswindow.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Documents/student_rates_client/"/>
+  </compounddef>
+</doxygen>

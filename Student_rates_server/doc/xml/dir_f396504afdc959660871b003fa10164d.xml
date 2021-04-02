@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="ru">
+  <compounddef id="dir_f396504afdc959660871b003fa10164d" kind="dir">
+    <compoundname>Documents</compoundname>
+    <innerdir refid="dir_87e0a54888a4e6058014138a00467d3f">Documents/Student_rates_server</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Documents/"/>
+  </compounddef>
+</doxygen>

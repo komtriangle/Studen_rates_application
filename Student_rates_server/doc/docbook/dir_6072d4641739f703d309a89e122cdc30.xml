@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_6072d4641739f703d309a89e122cdc30" xml:lang="ru">
+<title>Содержание директории C:/Users/Danila/Documents/Student_rates_server/server</title>
+<indexterm><primary>Содержание директории C:/Users/Danila/Documents/Student_rates_server/server</primary></indexterm>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="_server_8cpp">server.cpp</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_server_8h">server.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

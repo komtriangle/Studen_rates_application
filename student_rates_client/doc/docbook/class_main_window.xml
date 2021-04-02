@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_main_window" xml:lang="ru">
+<title>Класс MainWindow</title>
+<indexterm><primary>MainWindow</primary></indexterm>
+<para>
+<computeroutput>#include &lt;mainwindow.h&gt;</computeroutput>
+</para>
+<para>
+Базовые классы:QMainWindow.</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_main_window_1a996c5a2b6f77944776856f08ec30858d">MainWindow</link> (QWidget *parent=nullptr)</para>
+</listitem>
+            <listitem><para><link linkend="_class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые данные    </title>
+        <itemizedlist>
+            <listitem><para>Ui::MainWindow * <link linkend="_class_main_window_1a35466a70ed47252a0191168126a352a5">ui</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_class_main_window_1a996c5a2b6f77944776856f08ec30858d"/>    <section>
+    <title>MainWindow()</title>
+<indexterm><primary>MainWindow</primary><secondary>MainWindow</secondary></indexterm>
+<indexterm><primary>MainWindow</primary><secondary>MainWindow</secondary></indexterm>
+<para><computeroutput>MainWindow::MainWindow (QWidget * parent = <computeroutput>nullptr</computeroutput>
+)</computeroutput></para>    </section><anchor xml:id="_class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7"/>    <section>
+    <title>~MainWindow()</title>
+<indexterm><primary>~MainWindow</primary><secondary>MainWindow</secondary></indexterm>
+<indexterm><primary>MainWindow</primary><secondary>~MainWindow</secondary></indexterm>
+<para><computeroutput>MainWindow::~MainWindow ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Данные класса</title>
+<anchor xml:id="_class_main_window_1a35466a70ed47252a0191168126a352a5"/>    <section>
+    <title>ui</title>
+<indexterm><primary>ui</primary><secondary>MainWindow</secondary></indexterm>
+<indexterm><primary>MainWindow</primary><secondary>ui</secondary></indexterm>
+<para><computeroutput>Ui::MainWindow* MainWindow::ui<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+Объявления и описания членов классов находятся в файлах:</para>
+Documents/student_rates_client/<link linkend="_mainwindow_8h">mainwindow.h</link>Documents/student_rates_client/<link linkend="_mainwindow_8cpp">mainwindow.cpp</link></section>
+</section>

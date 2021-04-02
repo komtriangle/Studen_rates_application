@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmyserver" xml:lang="ru">
+<title>Класс myserver</title>
+<indexterm><primary>myserver</primary></indexterm>
+<para>
+
+<para>Класс принимает запросы от клиента, делает запросы к БД, отправляет клиенту ответ </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;server.h&gt;</computeroutput>
+</para>
+<para>
+Базовые классы:QTcpServer.</para>
+<simplesect>
+    <title>Открытые слоты    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classmyserver_1ac0262beea1a4f65f458bb2e022be899f">startServer</link> ()</para>
+
+<para>Вызывается в методе main при запуске приложения. В методе создается экзмепляр QSqlDatabase. Устнавливается название БД. После этого идут 7 запросов к этой БД, которые создают таблицы, если он не созданы (создание таблиц происходит, когда программа впервые запускается на этом компьютере). </para>
+</listitem>
+            <listitem><para>void <link linkend="_classmyserver_1a0ead7e6ac76160295e6d4955362c1372">incomingConnection</link> (qintptr socketDescriptor)</para>
+
+<para>Виртуальная функция из класса QtcpServer, она вызывается, когда доспутно новое соединение. Внутри функции создается сокет и ему устанавливается дескриптор, полученный как параметр. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classmyserver_1a22c4dbce53178b0e799df2bb5bf384e8">sockReady</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classmyserver_1a667c57294dd0c9573b9615840d3ff7aa">sockDisc</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmyserver_1ac63e26411d9ab3ac8dd69a1e31095989">myserver</link> ()</para>
+
+<para>myserver Конструктор </para>
+</listitem>
+            <listitem><para><link linkend="_classmyserver_1a074f8ee857234456b6369228171f87f7">~myserver</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Класс принимает запросы от клиента, делает запросы к БД, отправляет клиенту ответ </para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_classmyserver_1ac63e26411d9ab3ac8dd69a1e31095989"/>    <section>
+    <title>myserver()</title>
+<indexterm><primary>myserver</primary><secondary>myserver</secondary></indexterm>
+<indexterm><primary>myserver</primary><secondary>myserver</secondary></indexterm>
+<para><computeroutput>myserver::myserver ( )</computeroutput></para><para>
+
+<para>myserver Конструктор </para>
+</para>
+    </section><anchor xml:id="_classmyserver_1a074f8ee857234456b6369228171f87f7"/>    <section>
+    <title>~myserver()</title>
+<indexterm><primary>~myserver</primary><secondary>myserver</secondary></indexterm>
+<indexterm><primary>myserver</primary><secondary>~myserver</secondary></indexterm>
+<para><computeroutput>myserver::~myserver ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classmyserver_1a0ead7e6ac76160295e6d4955362c1372"/>    <section>
+    <title>incomingConnection</title>
+<indexterm><primary>incomingConnection</primary><secondary>myserver</secondary></indexterm>
+<indexterm><primary>myserver</primary><secondary>incomingConnection</secondary></indexterm>
+<para><computeroutput>void myserver::incomingConnection (qintptr socketDescriptor)<computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>Виртуальная функция из класса QtcpServer, она вызывается, когда доспутно новое соединение. Внутри функции создается сокет и ему устанавливается дескриптор, полученный как параметр. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>socketDescriptor</entry>
+                                <entry>
+<para>дескриптор сокета </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_classmyserver_1a667c57294dd0c9573b9615840d3ff7aa"/>    <section>
+    <title>sockDisc</title>
+<indexterm><primary>sockDisc</primary><secondary>myserver</secondary></indexterm>
+<indexterm><primary>myserver</primary><secondary>sockDisc</secondary></indexterm>
+<para><computeroutput>void myserver::sockDisc ( )<computeroutput>[slot]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classmyserver_1a22c4dbce53178b0e799df2bb5bf384e8"/>    <section>
+    <title>sockReady</title>
+<indexterm><primary>sockReady</primary><secondary>myserver</secondary></indexterm>
+<indexterm><primary>myserver</primary><secondary>sockReady</secondary></indexterm>
+<para><computeroutput>void myserver::sockReady ( )<computeroutput>[slot]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classmyserver_1ac0262beea1a4f65f458bb2e022be899f"/>    <section>
+    <title>startServer</title>
+<indexterm><primary>startServer</primary><secondary>myserver</secondary></indexterm>
+<indexterm><primary>myserver</primary><secondary>startServer</secondary></indexterm>
+<para><computeroutput>void myserver::startServer ( )<computeroutput>[slot]</computeroutput></computeroutput></para><para>
+
+<para>Вызывается в методе main при запуске приложения. В методе создается экзмепляр QSqlDatabase. Устнавливается название БД. После этого идут 7 запросов к этой БД, которые создают таблицы, если он не созданы (создание таблиц происходит, когда программа впервые запускается на этом компьютере). </para>
+</para>
+</section>
+<para>
+Объявления и описания членов классов находятся в файлах:</para>
+Documents/Student_rates_server/server/<link linkend="_server_8h">server.h</link>Documents/Student_rates_server/server/<link linkend="_server_8cpp">server.cpp</link></section>
+</section>

@@ -1,0 +1,933 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="ru">
+  <compounddef id="class_rates_page" kind="class" language="C++" prot="public">
+    <compoundname>RatesPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="rateswindow_8h" local="no">rateswindow.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_rates_page_1a1bd7da9c89ef70838a5c3ccdb4bb9a6d" prot="public" static="no" mutable="no">
+        <type>QTcpSocket *</type>
+        <definition>QTcpSocket* RatesPage::socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <initializer>=nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="29" column="16" bodyfile="Documents/student_rates_client/rateswindow.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_rates_page_1a3f32548d906f4afb81d48d1c1e9a3bf9" prot="private" static="no" mutable="no">
+        <type>Ui::RatesPage *</type>
+        <definition>Ui::RatesPage* RatesPage::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="98" column="19" bodyfile="Documents/student_rates_client/rateswindow.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rates_page_1a454ef8d593946139b18c8e34cec50ecb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_input" kindref="compound">Input</ref></type>
+        <definition>Input RatesPage::input_window</definition>
+        <argsstring></argsstring>
+        <name>input_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="99" column="11" bodyfile="Documents/student_rates_client/rateswindow.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rates_page_1a55b8f059dca9c772ada1832bf5fc614c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RatesPage::RatesPage</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>RatesPage</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="27" column="14" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="4" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1ad1b6d5ea27b150b5da2616bda7e4383b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RatesPage::~RatesPage</definition>
+        <argsstring>()</argsstring>
+        <name>~RatesPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="28" column="5" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1a509b9a571942835ee841b9487d87fc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::Display</definition>
+        <argsstring>()</argsstring>
+        <name>Display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="30" column="10" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="207" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_rates_page_1a7a3f158a2aed3623c406b80396989639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::groups_for_add_lesson</definition>
+        <argsstring>(QJsonArray groups)</argsstring>
+        <name>groups_for_add_lesson</name>
+        <param>
+          <type>QJsonArray</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="32" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_rates_page_1a1659e8aa5518547660c1fc37d4f9d6db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::sockReady</definition>
+        <argsstring>()</argsstring>
+        <name>sockReady</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="35" column="10" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="27" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1aad4bfaa188ac0da32c6e55cd064bb8cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::sockDisc</definition>
+        <argsstring>()</argsstring>
+        <name>sockDisc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="36" column="10" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a25386797f2d28e0b5434cae19182615f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_SaveRateButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_SaveRateButton_clicked</name>
+        <briefdescription>
+<para>on_SaveRateButton_clicked РЎРѕС…СЂР°РЅСЏРµС‚ Р±Р°Р»Р» РІРІРµРґРµРЅРЅС‹Р№ РІ РїРѕР»Рµ РІРІРѕРґР° </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="41" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="399" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a743060b4e4c782ce80dfe6b0a0381f72" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_choose_group_currentIndexChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>on_choose_group_currentIndexChanged</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>РњРµС‚РѕРґ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РІС‹Р·С‹РІР°РµС‚СЃСЏ РїСЂРё СЃРјРµРЅРµ Р·РЅР°С‡РµРЅРёСЏ РІ РєРѕРјР±Рѕ-Р±РѕРєСЃРµ СЃ СѓС‡РµР±РЅС‹РјРё РіСЂСѓРїРїР°РјРё. РњРµС‚РѕРґ РґРµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° СЃРµСЂРІРµСЂ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃС‚СѓРґРµРЅС‚РѕРІ Рё РєСѓСЂСЃРѕРІ РґР»СЏ РІС‹Р±СЂР°РЅРЅРѕР№ РіСЂСѓРїРїС‹ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="49" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="226" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1ab2796d5486bcbef2c739cd47a09b363b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_choose_student_currentIndexChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>on_choose_student_currentIndexChanged</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="50" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="239" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a25ab132fb73aa9ed0987b064de2d0e0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_choose_course_currentIndexChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>on_choose_course_currentIndexChanged</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="51" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="245" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a1fd5a410c75b546c321e65382773c19a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_choouselesson_currentIndexChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>on_choouselesson_currentIndexChanged</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="52" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="251" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a5f4dcda4b906d37ca6492d9bd2d681b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::authorizeUser</definition>
+        <argsstring>()</argsstring>
+        <name>authorizeUser</name>
+        <briefdescription>
+<para>authorizeUser РћС‚СЂР°РІР»СЏРµС‚ РґР°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё РЅР° СЃРµСЂРІРµСЂ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="57" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="214" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1ae8481f453fa76c7ca3437ae6d314d934" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::get_courses_for_add_lesson</definition>
+        <argsstring>(QString group_Id)</argsstring>
+        <name>get_courses_for_add_lesson</name>
+        <param>
+          <type>QString</type>
+          <declname>group_Id</declname>
+        </param>
+        <briefdescription>
+<para>get_courses_for_add_lesson Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° СЃРµСЂРІРµСЂ РЅР° РїРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° РєСѓСЂСЃРѕРІ РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ СѓС‡РµР±РЅРѕР№ РіСЂСѓРїРїС‹ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>group_Id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ РіСЂСѓРїРїС‹, РґР»СЏ РєРѕС‚РѕСЂРѕР№ РїРѕР»СѓС‡Р°РµРј СЃРїРёСЃРѕРє РєСѓСЂСЃРѕРІ. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="65" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="257" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1aab142efcccffbb46d2206a59fef4a491" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::get_all_students</definition>
+        <argsstring>()</argsstring>
+        <name>get_all_students</name>
+        <briefdescription>
+<para>get_all_students Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ РІСЃРµС… СЃС‚СѓРґРµРЅС‚РѕРІ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="70" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="295" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1ade0aa5ce7c2870425ff95b3f55cc33a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::getCoursesForStudent</definition>
+        <argsstring>(int StudentId)</argsstring>
+        <name>getCoursesForStudent</name>
+        <param>
+          <type>int</type>
+          <declname>StudentId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="71" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="305" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a840439bbcb739d529a7b3cc098486771" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::getLessonsForStudentAndCourse</definition>
+        <argsstring>(int student_Id, int course_Id)</argsstring>
+        <name>getLessonsForStudentAndCourse</name>
+        <param>
+          <type>int</type>
+          <declname>student_Id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>course_Id</declname>
+        </param>
+        <briefdescription>
+<para>getLessonsForStudentAndCourse Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° Р·Р°РЅСЏС‚РёР№ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>student_Id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ СЃС‚СѓРґРµРЅС‚Р°. РџРѕР»СѓС‡РµРЅРЅС‹Рµ Р·Р°РЅСЏС‚РёСЏ РґРѕР»Р¶РЅС‹ РѕС‚РЅРѕСЃРёС‚СЊСЃСЏ Рє С‚РѕР№ Р¶Рµ СѓС‡РµР±РЅРѕР№ РіСЂСѓРїРїРµ С‡С‚Рѕ Рё СЃС‚СѓРґРµРЅС‚. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">course_Id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ РєСѓСЂСЃР°, РїРѕ РєРѕС‚РѕСЂРѕРјСѓ РІС‹Р±РёСЂР°СЋС‚СЃСЏ Р·Р°РЅСЏС‚РёСЏ. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="79" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="320" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a2928e25a73f55eb53db54f21a1f46e24" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::setRateToStudentInGenerallist</definition>
+        <argsstring>(QString rate, int student_Id, int lesson_Id)</argsstring>
+        <name>setRateToStudentInGenerallist</name>
+        <param>
+          <type>QString</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>student_Id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lesson_Id</declname>
+        </param>
+        <briefdescription>
+<para>setRateToStudentInGenerallist - РЈСЃС‚Р°РЅР°РІР»СЏРІР°РµС‚ Р±Р°Р»Р» СЃС‚СѓРґРµРЅС‚Сѓ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- СЃР°Рј Р±Р°Р»Р» </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>student_Id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ СЃС‚СѓРґРµРЅС‚Р°, РєРѕС‚РѕСЂРѕРјСѓ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ Р±Р°Р»Р» </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lesson_Id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ Р·Р°РЅСЏС‚РёСЏ, Р·Р° РєРѕС‚РѕСЂРѕРµ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ Р±Р°Р»Р» </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="88" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="336" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a8030c0b049e840ffb763a012cdda3f68" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_AddLesoon_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_AddLesoon_triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="89" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="350" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1ae41f49f98e524812fe8f6c237938b405" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_AddLesson_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_AddLesson_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="90" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="358" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1afd70e1b6761cc02b46c5c496be60612f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_Main_Page_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_Main_Page_triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="91" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1ad6fbbb73a096b534d99265af26da1d1f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_GeneralListStudent_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_GeneralListStudent_triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="92" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="379" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1a936d00b159f4931f413a201e12010d98" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_ChooseStudent_AllStudent_currentIndexChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>on_ChooseStudent_AllStudent_currentIndexChanged</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="93" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="388" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1ab2ca1a0206ba0fade967901c68102582" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_ChooesCourse_AllStudent_currentIndexChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>on_ChooesCourse_AllStudent_currentIndexChanged</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="94" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="393" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_rates_page_1af29e06a15fabe768ad6b3031a0b86e6b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::on_ChooseGroupToAddLesson_currentIndexChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>on_ChooseGroupToAddLesson_currentIndexChanged</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="95" column="11" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="414" bodyend="418"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_rates_page_1a1c1c3ed508fe448944711fdd792594a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RatesPage::CurrentGroup</definition>
+        <argsstring>()</argsstring>
+        <name>CurrentGroup</name>
+        <briefdescription>
+<para>CurrentGroup. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ СѓС‡РµР±РЅРѕР№ РіСЂСѓРїРїС‹, РєРѕС‚РѕСЂР°СЏ РІС‹Р±СЂР°РЅР° РІ РєРѕРјР±Рѕ-Р±РѕРєСЃРµ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="106" column="8" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1af7a97d7730bcbf3763a5ffc092f4e8d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RatesPage::CurrentStudent</definition>
+        <argsstring>()</argsstring>
+        <name>CurrentStudent</name>
+        <briefdescription>
+<para>CurrentStudent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ СЃС‚СѓРґРµРЅС‚Р°, РєРѕС‚РѕСЂР°СЏ РІС‹Р±СЂР°РЅ РІ РєРѕРјР±Рѕ-Р±РѕРєСЃРµ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="112" column="8" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1a6006a1c4988800b6dc87d9a97d2e05dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RatesPage::CurrentCourse</definition>
+        <argsstring>()</argsstring>
+        <name>CurrentCourse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="113" column="8" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1ae76df48ca6851d2edab9e2b2400577f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RatesPage::CurrentLesson</definition>
+        <argsstring>()</argsstring>
+        <name>CurrentLesson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="114" column="8" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1ac1638801b703a4fdc1d8e903a0d43f35" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString RatesPage::CurrentRate</definition>
+        <argsstring>()</argsstring>
+        <name>CurrentRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="115" column="12" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1a5564bfbcd3e00ee24025c7668fa9ab2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::setData</definition>
+        <argsstring>(QComboBox *comboBox, QJsonArray arr)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>QComboBox *</type>
+          <declname>comboBox</declname>
+        </param>
+        <param>
+          <type>QJsonArray</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+<para>setData СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РґР°РЅРЅС‹Рµ РєРѕРјР±Рѕ-Р±РѕРєСЃ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comboBox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РєРѕРјР±Рѕ-Р±РѕРєСЃ, РІ РєРѕС‚РѕСЂС‹Р№ СѓСЃС‚Р°РЅР°РІР»РёРІР°СЋС‚СЃСЏ Р·РЅР°С‡РµРЅРёСЏ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РЅР°Р±РѕСЂ РґР°РЅРЅС‹С… РґР»СЏ СѓСЃС‚РЅРѕРІРєРё </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="122" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="142" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1accb93388fee5372d89e9d668ba73f5f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::getGroups</definition>
+        <argsstring>()</argsstring>
+        <name>getGroups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="123" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1a02adb82a2c9a41ae45f75ca63a414c34" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::getRates</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>getRates</name>
+        <param>
+          <type>int</type>
+          <defname>Student_Id</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>Lesson_Id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="124" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="109" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1a5845567d3fd5139da74960984289b610" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::getLessons</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>getLessons</name>
+        <param>
+          <type>int</type>
+          <defname>Group_Id</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>Course_Id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="125" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="122" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1abc560de0e714bb6ee40c835e6ad327f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::setAllStudents</definition>
+        <argsstring>(QJsonArray docArr)</argsstring>
+        <name>setAllStudents</name>
+        <param>
+          <type>QJsonArray</type>
+          <declname>docArr</declname>
+        </param>
+        <briefdescription>
+<para>setAllStudents - СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃС‚СѓРґРµРЅС‚РѕРІ РІ РєРѕРјР±Рѕ-Р±РѕРєСЃ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>docArr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- СЃРїРёСЃРѕРє СЃС‚СѓРґРµРЅС‚РѕРІ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="131" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1acd8ecc75d214ba5cd26a41ec49088da3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::setStudents</definition>
+        <argsstring>(QJsonArray docAr_students, QJsonArray docAr_couse)</argsstring>
+        <name>setStudents</name>
+        <param>
+          <type>QJsonArray</type>
+          <declname>docAr_students</declname>
+        </param>
+        <param>
+          <type>QJsonArray</type>
+          <declname>docAr_couse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="132" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="136" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1afe765a03a70954ba92aa6d3f65e7c959" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::setRates</definition>
+        <argsstring>(QString rate)</argsstring>
+        <name>setRates</name>
+        <param>
+          <type>QString</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="133" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="148" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1a628f0e21b7bf4123c6258f03cfefc7af" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::setAllRates</definition>
+        <argsstring>(QJsonArray docAr, int count_student)</argsstring>
+        <name>setAllRates</name>
+        <param>
+          <type>QJsonArray</type>
+          <declname>docAr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count_student</declname>
+        </param>
+        <briefdescription>
+<para>setAllRates - СѓСЃС‚Р°РЅР°Р»РІРёРІР°РµС‚ РІ С‚Р°Р±Р»РёС†Сѓ Р±Р°Р»Р»С‹ СЃС‚СѓРґРµРЅС‚РѕРІ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>docAr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РЅР°Р±РѕСЂ СЃ РґР°РЅРЅС‹РјРё Рѕ Р±Р°Р»Р»Р°С… </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count_student</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СѓРґРµРЅС‚РѕРІ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="140" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="166" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1ac2b236f3c053a57992de11068111adb0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::resInput</definition>
+        <argsstring>(QString status)</argsstring>
+        <name>resInput</name>
+        <param>
+          <type>QString</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="141" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="188" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1ac8c04d7bc405c0f7776234871dc7f6fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::setGroupsForAddLesson</definition>
+        <argsstring>(QJsonArray docArr)</argsstring>
+        <name>setGroupsForAddLesson</name>
+        <param>
+          <type>QJsonArray</type>
+          <declname>docArr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="142" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="200" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1a80c42a06fa6fdb49bc4e5013c7aa36bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::ResultAddLesson</definition>
+        <argsstring>(QString result)</argsstring>
+        <name>ResultAddLesson</name>
+        <param>
+          <type>QString</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="143" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="273" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rates_page_1a910d329d4eed321b70c1fb5d2c997fb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RatesPage::ResultSetRate</definition>
+        <argsstring>(QString result)</argsstring>
+        <name>ResultSetRate</name>
+        <param>
+          <type>QString</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Documents/student_rates_client/rateswindow.h" line="144" column="9" bodyfile="Documents/student_rates_client/rateswindow.cpp" bodystart="284" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_rates_page" kindref="compound">RatesPage</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RatesPage</label>
+        <link refid="class_rates_page"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RatesPage</label>
+        <link refid="class_rates_page"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>input_window</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="3">
+        <label>Input</label>
+        <link refid="class_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Documents/student_rates_client/rateswindow.h" line="22" column="1" bodyfile="Documents/student_rates_client/rateswindow.h" bodystart="23" bodyend="145"/>
+    <listofallmembers>
+      <member refid="class_rates_page_1a5f4dcda4b906d37ca6492d9bd2d681b7" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>authorizeUser</name></member>
+      <member refid="class_rates_page_1a6006a1c4988800b6dc87d9a97d2e05dc" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>CurrentCourse</name></member>
+      <member refid="class_rates_page_1a1c1c3ed508fe448944711fdd792594a4" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>CurrentGroup</name></member>
+      <member refid="class_rates_page_1ae76df48ca6851d2edab9e2b2400577f1" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>CurrentLesson</name></member>
+      <member refid="class_rates_page_1ac1638801b703a4fdc1d8e903a0d43f35" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>CurrentRate</name></member>
+      <member refid="class_rates_page_1af7a97d7730bcbf3763a5ffc092f4e8d2" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>CurrentStudent</name></member>
+      <member refid="class_rates_page_1a509b9a571942835ee841b9487d87fc0b" prot="public" virt="non-virtual"><scope>RatesPage</scope><name>Display</name></member>
+      <member refid="class_rates_page_1aab142efcccffbb46d2206a59fef4a491" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>get_all_students</name></member>
+      <member refid="class_rates_page_1ae8481f453fa76c7ca3437ae6d314d934" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>get_courses_for_add_lesson</name></member>
+      <member refid="class_rates_page_1ade0aa5ce7c2870425ff95b3f55cc33a4" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>getCoursesForStudent</name></member>
+      <member refid="class_rates_page_1accb93388fee5372d89e9d668ba73f5f0" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>getGroups</name></member>
+      <member refid="class_rates_page_1a5845567d3fd5139da74960984289b610" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>getLessons</name></member>
+      <member refid="class_rates_page_1a840439bbcb739d529a7b3cc098486771" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>getLessonsForStudentAndCourse</name></member>
+      <member refid="class_rates_page_1a02adb82a2c9a41ae45f75ca63a414c34" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>getRates</name></member>
+      <member refid="class_rates_page_1a7a3f158a2aed3623c406b80396989639" prot="public" virt="non-virtual"><scope>RatesPage</scope><name>groups_for_add_lesson</name></member>
+      <member refid="class_rates_page_1a454ef8d593946139b18c8e34cec50ecb" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>input_window</name></member>
+      <member refid="class_rates_page_1a8030c0b049e840ffb763a012cdda3f68" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_AddLesoon_triggered</name></member>
+      <member refid="class_rates_page_1ae41f49f98e524812fe8f6c237938b405" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_AddLesson_clicked</name></member>
+      <member refid="class_rates_page_1ab2ca1a0206ba0fade967901c68102582" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_ChooesCourse_AllStudent_currentIndexChanged</name></member>
+      <member refid="class_rates_page_1a25ab132fb73aa9ed0987b064de2d0e0c" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_choose_course_currentIndexChanged</name></member>
+      <member refid="class_rates_page_1a743060b4e4c782ce80dfe6b0a0381f72" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_choose_group_currentIndexChanged</name></member>
+      <member refid="class_rates_page_1ab2796d5486bcbef2c739cd47a09b363b" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_choose_student_currentIndexChanged</name></member>
+      <member refid="class_rates_page_1af29e06a15fabe768ad6b3031a0b86e6b" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_ChooseGroupToAddLesson_currentIndexChanged</name></member>
+      <member refid="class_rates_page_1a936d00b159f4931f413a201e12010d98" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_ChooseStudent_AllStudent_currentIndexChanged</name></member>
+      <member refid="class_rates_page_1a1fd5a410c75b546c321e65382773c19a" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_choouselesson_currentIndexChanged</name></member>
+      <member refid="class_rates_page_1ad6fbbb73a096b534d99265af26da1d1f" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_GeneralListStudent_triggered</name></member>
+      <member refid="class_rates_page_1afd70e1b6761cc02b46c5c496be60612f" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_Main_Page_triggered</name></member>
+      <member refid="class_rates_page_1a25386797f2d28e0b5434cae19182615f" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>on_SaveRateButton_clicked</name></member>
+      <member refid="class_rates_page_1a55b8f059dca9c772ada1832bf5fc614c" prot="public" virt="non-virtual"><scope>RatesPage</scope><name>RatesPage</name></member>
+      <member refid="class_rates_page_1ac2b236f3c053a57992de11068111adb0" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>resInput</name></member>
+      <member refid="class_rates_page_1a80c42a06fa6fdb49bc4e5013c7aa36bb" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>ResultAddLesson</name></member>
+      <member refid="class_rates_page_1a910d329d4eed321b70c1fb5d2c997fb4" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>ResultSetRate</name></member>
+      <member refid="class_rates_page_1a628f0e21b7bf4123c6258f03cfefc7af" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>setAllRates</name></member>
+      <member refid="class_rates_page_1abc560de0e714bb6ee40c835e6ad327f1" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>setAllStudents</name></member>
+      <member refid="class_rates_page_1a5564bfbcd3e00ee24025c7668fa9ab2f" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>setData</name></member>
+      <member refid="class_rates_page_1ac8c04d7bc405c0f7776234871dc7f6fe" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>setGroupsForAddLesson</name></member>
+      <member refid="class_rates_page_1afe765a03a70954ba92aa6d3f65e7c959" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>setRates</name></member>
+      <member refid="class_rates_page_1a2928e25a73f55eb53db54f21a1f46e24" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>setRateToStudentInGenerallist</name></member>
+      <member refid="class_rates_page_1acd8ecc75d214ba5cd26a41ec49088da3" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>setStudents</name></member>
+      <member refid="class_rates_page_1aad4bfaa188ac0da32c6e55cd064bb8cd" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>sockDisc</name></member>
+      <member refid="class_rates_page_1a1bd7da9c89ef70838a5c3ccdb4bb9a6d" prot="public" virt="non-virtual"><scope>RatesPage</scope><name>socket</name></member>
+      <member refid="class_rates_page_1a1659e8aa5518547660c1fc37d4f9d6db" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>sockReady</name></member>
+      <member refid="class_rates_page_1a3f32548d906f4afb81d48d1c1e9a3bf9" prot="private" virt="non-virtual"><scope>RatesPage</scope><name>ui</name></member>
+      <member refid="class_rates_page_1ad1b6d5ea27b150b5da2616bda7e4383b" prot="public" virt="non-virtual"><scope>RatesPage</scope><name>~RatesPage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

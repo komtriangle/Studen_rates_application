@@ -1,0 +1,502 @@
+\doxysection{Класс Rates\+Page}
+\label{class_rates_page}\index{RatesPage@{RatesPage}}
+
+
+The \doxyref{Rates\+Page}{стр.}{class_rates_page} class.  
+
+
+
+
+{\ttfamily \#include $<$rateswindow.\+h$>$}
+
+
+
+Базовые классы\+:QMain\+Window.
+
+\doxysubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ groups\+\_\+for\+\_\+add\+\_\+lesson} (QJson\+Array groups)
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Rates\+Page} (QWidget $\ast$parent=nullptr)
+\item 
+\textbf{ $\sim$\+Rates\+Page} ()
+\item 
+void \textbf{ Display} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+QTcp\+Socket $\ast$ \textbf{ socket} =nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ sock\+Ready} ()
+\item 
+void \textbf{ sock\+Disc} ()
+\item 
+void \textbf{ on\+\_\+\+Save\+Rate\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em on\+\_\+\+Save\+Rate\+Button\+\_\+clicked РЎРѕС…СЂР°РЅСЏРµС‚ Р±Р°Р»Р» РІРІРµРґРµРЅРЅС‹Р№ РІ РїРѕР»Рµ РІРІРѕРґР° \end{DoxyCompactList}\item 
+void \textbf{ on\+\_\+choose\+\_\+group\+\_\+current\+Index\+Changed} (int index)
+\begin{DoxyCompactList}\small\item\em РњРµС‚РѕРґ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РІС‹Р·С‹РІР°РµС‚СЃСЏ РїСЂРё СЃРјРµРЅРµ Р·РЅР°С‡РµРЅРёСЏ РІ РєРѕРјР±Рѕ-\/Р±РѕРєСЃРµ СЃ СѓС‡РµР±РЅС‹РјРё РіСЂСѓРїРїР°РјРё. РњРµС‚РѕРґ РґРµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° СЃРµСЂРІРµСЂ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃС‚СѓРґРµРЅС‚РѕРІ Рё РєСѓСЂСЃРѕРІ РґР»СЏ РІС‹Р±СЂР°РЅРЅРѕР№ РіСЂСѓРїРїС‹ \end{DoxyCompactList}\item 
+void \textbf{ on\+\_\+choose\+\_\+student\+\_\+current\+Index\+Changed} (int index)
+\item 
+void \textbf{ on\+\_\+choose\+\_\+course\+\_\+current\+Index\+Changed} (int index)
+\item 
+void \textbf{ on\+\_\+choouselesson\+\_\+current\+Index\+Changed} (int index)
+\item 
+void \textbf{ authorize\+User} ()
+\begin{DoxyCompactList}\small\item\em authorize\+User РћС‚СЂР°РІР»СЏРµС‚ РґР°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё РЅР° СЃРµСЂРІРµСЂ \end{DoxyCompactList}\item 
+void \textbf{ get\+\_\+courses\+\_\+for\+\_\+add\+\_\+lesson} (QString group\+\_\+\+Id)
+\begin{DoxyCompactList}\small\item\em get\+\_\+courses\+\_\+for\+\_\+add\+\_\+lesson Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° СЃРµСЂРІРµСЂ РЅР° РїРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° РєСѓСЂСЃРѕРІ РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ СѓС‡РµР±РЅРѕР№ РіСЂСѓРїРїС‹ \end{DoxyCompactList}\item 
+void \textbf{ get\+\_\+all\+\_\+students} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+all\+\_\+students Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ РІСЃРµС… СЃС‚СѓРґРµРЅС‚РѕРІ \end{DoxyCompactList}\item 
+void \textbf{ get\+Courses\+For\+Student} (int Student\+Id)
+\item 
+void \textbf{ get\+Lessons\+For\+Student\+And\+Course} (int student\+\_\+\+Id, int course\+\_\+\+Id)
+\begin{DoxyCompactList}\small\item\em get\+Lessons\+For\+Student\+And\+Course Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° Р·Р°РЅСЏС‚РёР№ \end{DoxyCompactList}\item 
+void \textbf{ set\+Rate\+To\+Student\+In\+Generallist} (QString rate, int student\+\_\+\+Id, int lesson\+\_\+\+Id)
+\begin{DoxyCompactList}\small\item\em set\+Rate\+To\+Student\+In\+Generallist -\/ РЈСЃС‚Р°РЅР°РІР»СЏРІР°РµС‚ Р±Р°Р»Р» СЃС‚СѓРґРµРЅС‚Сѓ \end{DoxyCompactList}\item 
+void \textbf{ on\+\_\+\+Add\+Lesoon\+\_\+triggered} ()
+\item 
+void \textbf{ on\+\_\+\+Add\+Lesson\+\_\+clicked} ()
+\item 
+void \textbf{ on\+\_\+\+Main\+\_\+\+Page\+\_\+triggered} ()
+\item 
+void \textbf{ on\+\_\+\+General\+List\+Student\+\_\+triggered} ()
+\item 
+void \textbf{ on\+\_\+\+Choose\+Student\+\_\+\+All\+Student\+\_\+current\+Index\+Changed} (int index)
+\item 
+void \textbf{ on\+\_\+\+Chooes\+Course\+\_\+\+All\+Student\+\_\+current\+Index\+Changed} (int index)
+\item 
+void \textbf{ on\+\_\+\+Choose\+Group\+To\+Add\+Lesson\+\_\+current\+Index\+Changed} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Current\+Group} ()
+\begin{DoxyCompactList}\small\item\em Current\+Group. \end{DoxyCompactList}\item 
+int \textbf{ Current\+Student} ()
+\begin{DoxyCompactList}\small\item\em Current\+Student. \end{DoxyCompactList}\item 
+int \textbf{ Current\+Course} ()
+\item 
+int \textbf{ Current\+Lesson} ()
+\item 
+QString \textbf{ Current\+Rate} ()
+\item 
+void \textbf{ set\+Data} (QCombo\+Box $\ast$combo\+Box, QJson\+Array arr)
+\begin{DoxyCompactList}\small\item\em set\+Data СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РґР°РЅРЅС‹Рµ РєРѕРјР±Рѕ-\/Р±РѕРєСЃ \end{DoxyCompactList}\item 
+void \textbf{ get\+Groups} ()
+\item 
+void \textbf{ get\+Rates} (int, int)
+\item 
+void \textbf{ get\+Lessons} (int, int)
+\item 
+void \textbf{ set\+All\+Students} (QJson\+Array doc\+Arr)
+\begin{DoxyCompactList}\small\item\em set\+All\+Students -\/ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃС‚СѓРґРµРЅС‚РѕРІ РІ РєРѕРјР±Рѕ-\/Р±РѕРєСЃ \end{DoxyCompactList}\item 
+void \textbf{ set\+Students} (QJson\+Array doc\+Ar\+\_\+students, QJson\+Array doc\+Ar\+\_\+couse)
+\item 
+void \textbf{ set\+Rates} (QString rate)
+\item 
+void \textbf{ set\+All\+Rates} (QJson\+Array doc\+Ar, int count\+\_\+student)
+\begin{DoxyCompactList}\small\item\em set\+All\+Rates -\/ СѓСЃС‚Р°РЅР°Р»РІРёРІР°РµС‚ РІ С‚Р°Р±Р»РёС†Сѓ Р±Р°Р»Р»С‹ СЃС‚СѓРґРµРЅС‚РѕРІ \end{DoxyCompactList}\item 
+void \textbf{ res\+Input} (QString status)
+\item 
+void \textbf{ set\+Groups\+For\+Add\+Lesson} (QJson\+Array doc\+Arr)
+\item 
+void \textbf{ Result\+Add\+Lesson} (QString result)
+\item 
+void \textbf{ Result\+Set\+Rate} (QString result)
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Rates\+Page $\ast$ \textbf{ ui}
+\item 
+\textbf{ Input} \textbf{ input\+\_\+window}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+The \doxyref{Rates\+Page}{стр.}{class_rates_page} class. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_rates_page_a55b8f059dca9c772ada1832bf5fc614c}} 
+\index{RatesPage@{RatesPage}!RatesPage@{RatesPage}}
+\index{RatesPage@{RatesPage}!RatesPage@{RatesPage}}
+\doxysubsubsection{RatesPage()}
+{\footnotesize\ttfamily Rates\+Page\+::\+Rates\+Page (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\label{class_rates_page_ad1b6d5ea27b150b5da2616bda7e4383b}} 
+\index{RatesPage@{RatesPage}!````~RatesPage@{$\sim$RatesPage}}
+\index{````~RatesPage@{$\sim$RatesPage}!RatesPage@{RatesPage}}
+\doxysubsubsection{$\sim$RatesPage()}
+{\footnotesize\ttfamily Rates\+Page\+::$\sim$\+Rates\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Методы}
+\mbox{\label{class_rates_page_a5f4dcda4b906d37ca6492d9bd2d681b7}} 
+\index{RatesPage@{RatesPage}!authorizeUser@{authorizeUser}}
+\index{authorizeUser@{authorizeUser}!RatesPage@{RatesPage}}
+\doxysubsubsection{authorizeUser}
+{\footnotesize\ttfamily void Rates\+Page\+::authorize\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+authorize\+User РћС‚СЂР°РІР»СЏРµС‚ РґР°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё РЅР° СЃРµСЂРІРµСЂ 
+
+\mbox{\label{class_rates_page_a6006a1c4988800b6dc87d9a97d2e05dc}} 
+\index{RatesPage@{RatesPage}!CurrentCourse@{CurrentCourse}}
+\index{CurrentCourse@{CurrentCourse}!RatesPage@{RatesPage}}
+\doxysubsubsection{CurrentCourse()}
+{\footnotesize\ttfamily int Rates\+Page\+::\+Current\+Course (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a1c1c3ed508fe448944711fdd792594a4}} 
+\index{RatesPage@{RatesPage}!CurrentGroup@{CurrentGroup}}
+\index{CurrentGroup@{CurrentGroup}!RatesPage@{RatesPage}}
+\doxysubsubsection{CurrentGroup()}
+{\footnotesize\ttfamily int Rates\+Page\+::\+Current\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current\+Group. 
+
+\begin{DoxyReturn}{Возвращает}
+РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ СѓС‡РµР±РЅРѕР№ РіСЂСѓРїРїС‹, РєРѕС‚РѕСЂР°СЏ РІС‹Р±СЂР°РЅР° РІ РєРѕРјР±Рѕ-\/Р±РѕРєСЃРµ 
+\end{DoxyReturn}
+\mbox{\label{class_rates_page_ae76df48ca6851d2edab9e2b2400577f1}} 
+\index{RatesPage@{RatesPage}!CurrentLesson@{CurrentLesson}}
+\index{CurrentLesson@{CurrentLesson}!RatesPage@{RatesPage}}
+\doxysubsubsection{CurrentLesson()}
+{\footnotesize\ttfamily int Rates\+Page\+::\+Current\+Lesson (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_ac1638801b703a4fdc1d8e903a0d43f35}} 
+\index{RatesPage@{RatesPage}!CurrentRate@{CurrentRate}}
+\index{CurrentRate@{CurrentRate}!RatesPage@{RatesPage}}
+\doxysubsubsection{CurrentRate()}
+{\footnotesize\ttfamily QString Rates\+Page\+::\+Current\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_af7a97d7730bcbf3763a5ffc092f4e8d2}} 
+\index{RatesPage@{RatesPage}!CurrentStudent@{CurrentStudent}}
+\index{CurrentStudent@{CurrentStudent}!RatesPage@{RatesPage}}
+\doxysubsubsection{CurrentStudent()}
+{\footnotesize\ttfamily int Rates\+Page\+::\+Current\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current\+Student. 
+
+\begin{DoxyReturn}{Возвращает}
+РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ СЃС‚СѓРґРµРЅС‚Р°, РєРѕС‚РѕСЂР°СЏ РІС‹Р±СЂР°РЅ РІ РєРѕРјР±Рѕ-\/Р±РѕРєСЃРµ 
+\end{DoxyReturn}
+\mbox{\label{class_rates_page_a509b9a571942835ee841b9487d87fc0b}} 
+\index{RatesPage@{RatesPage}!Display@{Display}}
+\index{Display@{Display}!RatesPage@{RatesPage}}
+\doxysubsubsection{Display()}
+{\footnotesize\ttfamily void Rates\+Page\+::\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{class_rates_page_aab142efcccffbb46d2206a59fef4a491}} 
+\index{RatesPage@{RatesPage}!get\_all\_students@{get\_all\_students}}
+\index{get\_all\_students@{get\_all\_students}!RatesPage@{RatesPage}}
+\doxysubsubsection{get\_all\_students}
+{\footnotesize\ttfamily void Rates\+Page\+::get\+\_\+all\+\_\+students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+get\+\_\+all\+\_\+students Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ РІСЃРµС… СЃС‚СѓРґРµРЅС‚РѕРІ 
+
+\mbox{\label{class_rates_page_ae8481f453fa76c7ca3437ae6d314d934}} 
+\index{RatesPage@{RatesPage}!get\_courses\_for\_add\_lesson@{get\_courses\_for\_add\_lesson}}
+\index{get\_courses\_for\_add\_lesson@{get\_courses\_for\_add\_lesson}!RatesPage@{RatesPage}}
+\doxysubsubsection{get\_courses\_for\_add\_lesson}
+{\footnotesize\ttfamily void Rates\+Page\+::get\+\_\+courses\+\_\+for\+\_\+add\+\_\+lesson (\begin{DoxyParamCaption}\item[{QString}]{group\+\_\+\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+get\+\_\+courses\+\_\+for\+\_\+add\+\_\+lesson Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° СЃРµСЂРІРµСЂ РЅР° РїРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° РєСѓСЂСЃРѕРІ РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ СѓС‡РµР±РЅРѕР№ РіСЂСѓРїРїС‹ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em group\+\_\+\+Id} & -\/ РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ РіСЂСѓРїРїС‹, РґР»СЏ РєРѕС‚РѕСЂРѕР№ РїРѕР»СѓС‡Р°РµРј СЃРїРёСЃРѕРє РєСѓСЂСЃРѕРІ. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rates_page_ade0aa5ce7c2870425ff95b3f55cc33a4}} 
+\index{RatesPage@{RatesPage}!getCoursesForStudent@{getCoursesForStudent}}
+\index{getCoursesForStudent@{getCoursesForStudent}!RatesPage@{RatesPage}}
+\doxysubsubsection{getCoursesForStudent}
+{\footnotesize\ttfamily void Rates\+Page\+::get\+Courses\+For\+Student (\begin{DoxyParamCaption}\item[{int}]{Student\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_accb93388fee5372d89e9d668ba73f5f0}} 
+\index{RatesPage@{RatesPage}!getGroups@{getGroups}}
+\index{getGroups@{getGroups}!RatesPage@{RatesPage}}
+\doxysubsubsection{getGroups()}
+{\footnotesize\ttfamily void Rates\+Page\+::get\+Groups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a5845567d3fd5139da74960984289b610}} 
+\index{RatesPage@{RatesPage}!getLessons@{getLessons}}
+\index{getLessons@{getLessons}!RatesPage@{RatesPage}}
+\doxysubsubsection{getLessons()}
+{\footnotesize\ttfamily void Rates\+Page\+::get\+Lessons (\begin{DoxyParamCaption}\item[{int}]{Group\+\_\+\+Id,  }\item[{int}]{Course\+\_\+\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a840439bbcb739d529a7b3cc098486771}} 
+\index{RatesPage@{RatesPage}!getLessonsForStudentAndCourse@{getLessonsForStudentAndCourse}}
+\index{getLessonsForStudentAndCourse@{getLessonsForStudentAndCourse}!RatesPage@{RatesPage}}
+\doxysubsubsection{getLessonsForStudentAndCourse}
+{\footnotesize\ttfamily void Rates\+Page\+::get\+Lessons\+For\+Student\+And\+Course (\begin{DoxyParamCaption}\item[{int}]{student\+\_\+\+Id,  }\item[{int}]{course\+\_\+\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+get\+Lessons\+For\+Student\+And\+Course Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° Р·Р°РЅСЏС‚РёР№ 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+ & {\em student\+\_\+\+Id} & -\/ РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ СЃС‚СѓРґРµРЅС‚Р°. РџРѕР»СѓС‡РµРЅРЅС‹Рµ Р·Р°РЅСЏС‚РёСЏ РґРѕР»Р¶РЅС‹ РѕС‚РЅРѕСЃРёС‚СЊСЃСЏ Рє С‚РѕР№ Р¶Рµ СѓС‡РµР±РЅРѕР№ РіСЂСѓРїРїРµ С‡С‚Рѕ Рё СЃС‚СѓРґРµРЅС‚. \\
+\hline
+\mbox{\texttt{ in}}  & {\em course\+\_\+\+Id} & -\/ РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ РєСѓСЂСЃР°, РїРѕ РєРѕС‚РѕСЂРѕРјСѓ РІС‹Р±РёСЂР°СЋС‚СЃСЏ Р·Р°РЅСЏС‚РёСЏ. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rates_page_a02adb82a2c9a41ae45f75ca63a414c34}} 
+\index{RatesPage@{RatesPage}!getRates@{getRates}}
+\index{getRates@{getRates}!RatesPage@{RatesPage}}
+\doxysubsubsection{getRates()}
+{\footnotesize\ttfamily void Rates\+Page\+::get\+Rates (\begin{DoxyParamCaption}\item[{int}]{Student\+\_\+\+Id,  }\item[{int}]{Lesson\+\_\+\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a7a3f158a2aed3623c406b80396989639}} 
+\index{RatesPage@{RatesPage}!groups\_for\_add\_lesson@{groups\_for\_add\_lesson}}
+\index{groups\_for\_add\_lesson@{groups\_for\_add\_lesson}!RatesPage@{RatesPage}}
+\doxysubsubsection{groups\_for\_add\_lesson}
+{\footnotesize\ttfamily void Rates\+Page\+::groups\+\_\+for\+\_\+add\+\_\+lesson (\begin{DoxyParamCaption}\item[{QJson\+Array}]{groups }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\label{class_rates_page_a8030c0b049e840ffb763a012cdda3f68}} 
+\index{RatesPage@{RatesPage}!on\_AddLesoon\_triggered@{on\_AddLesoon\_triggered}}
+\index{on\_AddLesoon\_triggered@{on\_AddLesoon\_triggered}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_AddLesoon\_triggered}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+\+Add\+Lesoon\+\_\+triggered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_ae41f49f98e524812fe8f6c237938b405}} 
+\index{RatesPage@{RatesPage}!on\_AddLesson\_clicked@{on\_AddLesson\_clicked}}
+\index{on\_AddLesson\_clicked@{on\_AddLesson\_clicked}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_AddLesson\_clicked}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+\+Add\+Lesson\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_ab2ca1a0206ba0fade967901c68102582}} 
+\index{RatesPage@{RatesPage}!on\_ChooesCourse\_AllStudent\_currentIndexChanged@{on\_ChooesCourse\_AllStudent\_currentIndexChanged}}
+\index{on\_ChooesCourse\_AllStudent\_currentIndexChanged@{on\_ChooesCourse\_AllStudent\_currentIndexChanged}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_ChooesCourse\_AllStudent\_currentIndexChanged}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+\+Chooes\+Course\+\_\+\+All\+Student\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_a25ab132fb73aa9ed0987b064de2d0e0c}} 
+\index{RatesPage@{RatesPage}!on\_choose\_course\_currentIndexChanged@{on\_choose\_course\_currentIndexChanged}}
+\index{on\_choose\_course\_currentIndexChanged@{on\_choose\_course\_currentIndexChanged}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_choose\_course\_currentIndexChanged}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+choose\+\_\+course\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_a743060b4e4c782ce80dfe6b0a0381f72}} 
+\index{RatesPage@{RatesPage}!on\_choose\_group\_currentIndexChanged@{on\_choose\_group\_currentIndexChanged}}
+\index{on\_choose\_group\_currentIndexChanged@{on\_choose\_group\_currentIndexChanged}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_choose\_group\_currentIndexChanged}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+choose\+\_\+group\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+РњРµС‚РѕРґ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РІС‹Р·С‹РІР°РµС‚СЃСЏ РїСЂРё СЃРјРµРЅРµ Р·РЅР°С‡РµРЅРёСЏ РІ РєРѕРјР±Рѕ-\/Р±РѕРєСЃРµ СЃ СѓС‡РµР±РЅС‹РјРё РіСЂСѓРїРїР°РјРё. РњРµС‚РѕРґ РґРµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ РЅР° СЃРµСЂРІРµСЂ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃС‚СѓРґРµРЅС‚РѕРІ Рё РєСѓСЂСЃРѕРІ РґР»СЏ РІС‹Р±СЂР°РЅРЅРѕР№ РіСЂСѓРїРїС‹ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rates_page_ab2796d5486bcbef2c739cd47a09b363b}} 
+\index{RatesPage@{RatesPage}!on\_choose\_student\_currentIndexChanged@{on\_choose\_student\_currentIndexChanged}}
+\index{on\_choose\_student\_currentIndexChanged@{on\_choose\_student\_currentIndexChanged}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_choose\_student\_currentIndexChanged}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+choose\+\_\+student\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_af29e06a15fabe768ad6b3031a0b86e6b}} 
+\index{RatesPage@{RatesPage}!on\_ChooseGroupToAddLesson\_currentIndexChanged@{on\_ChooseGroupToAddLesson\_currentIndexChanged}}
+\index{on\_ChooseGroupToAddLesson\_currentIndexChanged@{on\_ChooseGroupToAddLesson\_currentIndexChanged}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_ChooseGroupToAddLesson\_currentIndexChanged}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+\+Choose\+Group\+To\+Add\+Lesson\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_a936d00b159f4931f413a201e12010d98}} 
+\index{RatesPage@{RatesPage}!on\_ChooseStudent\_AllStudent\_currentIndexChanged@{on\_ChooseStudent\_AllStudent\_currentIndexChanged}}
+\index{on\_ChooseStudent\_AllStudent\_currentIndexChanged@{on\_ChooseStudent\_AllStudent\_currentIndexChanged}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_ChooseStudent\_AllStudent\_currentIndexChanged}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+\+Choose\+Student\+\_\+\+All\+Student\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_a1fd5a410c75b546c321e65382773c19a}} 
+\index{RatesPage@{RatesPage}!on\_choouselesson\_currentIndexChanged@{on\_choouselesson\_currentIndexChanged}}
+\index{on\_choouselesson\_currentIndexChanged@{on\_choouselesson\_currentIndexChanged}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_choouselesson\_currentIndexChanged}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+choouselesson\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_ad6fbbb73a096b534d99265af26da1d1f}} 
+\index{RatesPage@{RatesPage}!on\_GeneralListStudent\_triggered@{on\_GeneralListStudent\_triggered}}
+\index{on\_GeneralListStudent\_triggered@{on\_GeneralListStudent\_triggered}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_GeneralListStudent\_triggered}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+\+General\+List\+Student\+\_\+triggered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_afd70e1b6761cc02b46c5c496be60612f}} 
+\index{RatesPage@{RatesPage}!on\_Main\_Page\_triggered@{on\_Main\_Page\_triggered}}
+\index{on\_Main\_Page\_triggered@{on\_Main\_Page\_triggered}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_Main\_Page\_triggered}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+\+Main\+\_\+\+Page\+\_\+triggered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_a25386797f2d28e0b5434cae19182615f}} 
+\index{RatesPage@{RatesPage}!on\_SaveRateButton\_clicked@{on\_SaveRateButton\_clicked}}
+\index{on\_SaveRateButton\_clicked@{on\_SaveRateButton\_clicked}!RatesPage@{RatesPage}}
+\doxysubsubsection{on\_SaveRateButton\_clicked}
+{\footnotesize\ttfamily void Rates\+Page\+::on\+\_\+\+Save\+Rate\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+on\+\_\+\+Save\+Rate\+Button\+\_\+clicked РЎРѕС…СЂР°РЅСЏРµС‚ Р±Р°Р»Р» РІРІРµРґРµРЅРЅС‹Р№ РІ РїРѕР»Рµ РІРІРѕРґР° 
+
+\mbox{\label{class_rates_page_ac2b236f3c053a57992de11068111adb0}} 
+\index{RatesPage@{RatesPage}!resInput@{resInput}}
+\index{resInput@{resInput}!RatesPage@{RatesPage}}
+\doxysubsubsection{resInput()}
+{\footnotesize\ttfamily void Rates\+Page\+::res\+Input (\begin{DoxyParamCaption}\item[{QString}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a80c42a06fa6fdb49bc4e5013c7aa36bb}} 
+\index{RatesPage@{RatesPage}!ResultAddLesson@{ResultAddLesson}}
+\index{ResultAddLesson@{ResultAddLesson}!RatesPage@{RatesPage}}
+\doxysubsubsection{ResultAddLesson()}
+{\footnotesize\ttfamily void Rates\+Page\+::\+Result\+Add\+Lesson (\begin{DoxyParamCaption}\item[{QString}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a910d329d4eed321b70c1fb5d2c997fb4}} 
+\index{RatesPage@{RatesPage}!ResultSetRate@{ResultSetRate}}
+\index{ResultSetRate@{ResultSetRate}!RatesPage@{RatesPage}}
+\doxysubsubsection{ResultSetRate()}
+{\footnotesize\ttfamily void Rates\+Page\+::\+Result\+Set\+Rate (\begin{DoxyParamCaption}\item[{QString}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a628f0e21b7bf4123c6258f03cfefc7af}} 
+\index{RatesPage@{RatesPage}!setAllRates@{setAllRates}}
+\index{setAllRates@{setAllRates}!RatesPage@{RatesPage}}
+\doxysubsubsection{setAllRates()}
+{\footnotesize\ttfamily void Rates\+Page\+::set\+All\+Rates (\begin{DoxyParamCaption}\item[{QJson\+Array}]{doc\+Ar,  }\item[{int}]{count\+\_\+student }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+set\+All\+Rates -\/ СѓСЃС‚Р°РЅР°Р»РІРёРІР°РµС‚ РІ С‚Р°Р±Р»РёС†Сѓ Р±Р°Р»Р»С‹ СЃС‚СѓРґРµРЅС‚РѕРІ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em doc\+Ar} & -\/ РЅР°Р±РѕСЂ СЃ РґР°РЅРЅС‹РјРё Рѕ Р±Р°Р»Р»Р°С… \\
+\hline
+{\em count\+\_\+student} & -\/ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СѓРґРµРЅС‚РѕРІ \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rates_page_abc560de0e714bb6ee40c835e6ad327f1}} 
+\index{RatesPage@{RatesPage}!setAllStudents@{setAllStudents}}
+\index{setAllStudents@{setAllStudents}!RatesPage@{RatesPage}}
+\doxysubsubsection{setAllStudents()}
+{\footnotesize\ttfamily void Rates\+Page\+::set\+All\+Students (\begin{DoxyParamCaption}\item[{QJson\+Array}]{doc\+Arr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+set\+All\+Students -\/ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃС‚СѓРґРµРЅС‚РѕРІ РІ РєРѕРјР±Рѕ-\/Р±РѕРєСЃ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em doc\+Arr} & -\/ СЃРїРёСЃРѕРє СЃС‚СѓРґРµРЅС‚РѕРІ \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rates_page_a5564bfbcd3e00ee24025c7668fa9ab2f}} 
+\index{RatesPage@{RatesPage}!setData@{setData}}
+\index{setData@{setData}!RatesPage@{RatesPage}}
+\doxysubsubsection{setData()}
+{\footnotesize\ttfamily void Rates\+Page\+::set\+Data (\begin{DoxyParamCaption}\item[{QCombo\+Box $\ast$}]{combo\+Box,  }\item[{QJson\+Array}]{arr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+set\+Data СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РґР°РЅРЅС‹Рµ РєРѕРјР±Рѕ-\/Р±РѕРєСЃ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em combo\+Box} & -\/ РєРѕРјР±Рѕ-\/Р±РѕРєСЃ, РІ РєРѕС‚РѕСЂС‹Р№ СѓСЃС‚Р°РЅР°РІР»РёРІР°СЋС‚СЃСЏ Р·РЅР°С‡РµРЅРёСЏ \\
+\hline
+{\em arr} & -\/ РЅР°Р±РѕСЂ РґР°РЅРЅС‹С… РґР»СЏ СѓСЃС‚РЅРѕРІРєРё \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rates_page_ac8c04d7bc405c0f7776234871dc7f6fe}} 
+\index{RatesPage@{RatesPage}!setGroupsForAddLesson@{setGroupsForAddLesson}}
+\index{setGroupsForAddLesson@{setGroupsForAddLesson}!RatesPage@{RatesPage}}
+\doxysubsubsection{setGroupsForAddLesson()}
+{\footnotesize\ttfamily void Rates\+Page\+::set\+Groups\+For\+Add\+Lesson (\begin{DoxyParamCaption}\item[{QJson\+Array}]{doc\+Arr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_afe765a03a70954ba92aa6d3f65e7c959}} 
+\index{RatesPage@{RatesPage}!setRates@{setRates}}
+\index{setRates@{setRates}!RatesPage@{RatesPage}}
+\doxysubsubsection{setRates()}
+{\footnotesize\ttfamily void Rates\+Page\+::set\+Rates (\begin{DoxyParamCaption}\item[{QString}]{rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a2928e25a73f55eb53db54f21a1f46e24}} 
+\index{RatesPage@{RatesPage}!setRateToStudentInGenerallist@{setRateToStudentInGenerallist}}
+\index{setRateToStudentInGenerallist@{setRateToStudentInGenerallist}!RatesPage@{RatesPage}}
+\doxysubsubsection{setRateToStudentInGenerallist}
+{\footnotesize\ttfamily void Rates\+Page\+::set\+Rate\+To\+Student\+In\+Generallist (\begin{DoxyParamCaption}\item[{QString}]{rate,  }\item[{int}]{student\+\_\+\+Id,  }\item[{int}]{lesson\+\_\+\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+set\+Rate\+To\+Student\+In\+Generallist -\/ РЈСЃС‚Р°РЅР°РІР»СЏРІР°РµС‚ Р±Р°Р»Р» СЃС‚СѓРґРµРЅС‚Сѓ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em rate} & -\/ СЃР°Рј Р±Р°Р»Р» \\
+\hline
+{\em student\+\_\+\+Id} & -\/ РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ СЃС‚СѓРґРµРЅС‚Р°, РєРѕС‚РѕСЂРѕРјСѓ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ Р±Р°Р»Р» \\
+\hline
+{\em lesson\+\_\+\+Id} & -\/ РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ Р·Р°РЅСЏС‚РёСЏ, Р·Р° РєРѕС‚РѕСЂРѕРµ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ Р±Р°Р»Р» \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rates_page_acd8ecc75d214ba5cd26a41ec49088da3}} 
+\index{RatesPage@{RatesPage}!setStudents@{setStudents}}
+\index{setStudents@{setStudents}!RatesPage@{RatesPage}}
+\doxysubsubsection{setStudents()}
+{\footnotesize\ttfamily void Rates\+Page\+::set\+Students (\begin{DoxyParamCaption}\item[{QJson\+Array}]{doc\+Ar\+\_\+students,  }\item[{QJson\+Array}]{doc\+Ar\+\_\+couse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_aad4bfaa188ac0da32c6e55cd064bb8cd}} 
+\index{RatesPage@{RatesPage}!sockDisc@{sockDisc}}
+\index{sockDisc@{sockDisc}!RatesPage@{RatesPage}}
+\doxysubsubsection{sockDisc}
+{\footnotesize\ttfamily void Rates\+Page\+::sock\+Disc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\label{class_rates_page_a1659e8aa5518547660c1fc37d4f9d6db}} 
+\index{RatesPage@{RatesPage}!sockReady@{sockReady}}
+\index{sockReady@{sockReady}!RatesPage@{RatesPage}}
+\doxysubsubsection{sockReady}
+{\footnotesize\ttfamily void Rates\+Page\+::sock\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_rates_page_a454ef8d593946139b18c8e34cec50ecb}} 
+\index{RatesPage@{RatesPage}!input\_window@{input\_window}}
+\index{input\_window@{input\_window}!RatesPage@{RatesPage}}
+\doxysubsubsection{input\_window}
+{\footnotesize\ttfamily \textbf{ Input} Rates\+Page\+::input\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_rates_page_a1bd7da9c89ef70838a5c3ccdb4bb9a6d}} 
+\index{RatesPage@{RatesPage}!socket@{socket}}
+\index{socket@{socket}!RatesPage@{RatesPage}}
+\doxysubsubsection{socket}
+{\footnotesize\ttfamily QTcp\+Socket$\ast$ Rates\+Page\+::socket =nullptr}
+
+\mbox{\label{class_rates_page_a3f32548d906f4afb81d48d1c1e9a3bf9}} 
+\index{RatesPage@{RatesPage}!ui@{ui}}
+\index{ui@{ui}!RatesPage@{RatesPage}}
+\doxysubsubsection{ui}
+{\footnotesize\ttfamily Ui\+::\+Rates\+Page$\ast$ Rates\+Page\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Documents/student\+\_\+rates\+\_\+client/\textbf{ rateswindow.\+h}\item 
+Documents/student\+\_\+rates\+\_\+client/\textbf{ rateswindow.\+cpp}\end{DoxyCompactItemize}

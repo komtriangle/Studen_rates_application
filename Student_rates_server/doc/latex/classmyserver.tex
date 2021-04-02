@@ -1,0 +1,101 @@
+\hypertarget{classmyserver}{}\doxysection{Класс myserver}
+\label{classmyserver}\index{myserver@{myserver}}
+
+
+Класс принимает запросы от клиента, делает запросы к БД, отправляет клиенту ответ  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+
+
+Базовые классы\+:QTcp\+Server.
+
+\doxysubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmyserver_ac0262beea1a4f65f458bb2e022be899f}{start\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Вызывается в методе main при запуске приложения. В методе создается экзмепляр QSql\+Database. Устнавливается название БД. После этого идут 7 запросов к этой БД, которые создают таблицы, если он не созданы (создание таблиц происходит, когда программа впервые запускается на этом компьютере). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmyserver_a0ead7e6ac76160295e6d4955362c1372}{incoming\+Connection}} (qintptr socket\+Descriptor)
+\begin{DoxyCompactList}\small\item\em Виртуальная функция из класса Qtcp\+Server, она вызывается, когда доспутно новое соединение. Внутри функции создается сокет и ему устанавливается дескриптор, полученный как параметр. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmyserver_a22c4dbce53178b0e799df2bb5bf384e8}{sock\+Ready}} ()
+\item 
+void \mbox{\hyperlink{classmyserver_a667c57294dd0c9573b9615840d3ff7aa}{sock\+Disc}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmyserver_ac63e26411d9ab3ac8dd69a1e31095989}{myserver}} ()
+\begin{DoxyCompactList}\small\item\em myserver Конструктор \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmyserver_a074f8ee857234456b6369228171f87f7}{$\sim$myserver}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс принимает запросы от клиента, делает запросы к БД, отправляет клиенту ответ 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classmyserver_ac63e26411d9ab3ac8dd69a1e31095989}\label{classmyserver_ac63e26411d9ab3ac8dd69a1e31095989}} 
+\index{myserver@{myserver}!myserver@{myserver}}
+\index{myserver@{myserver}!myserver@{myserver}}
+\doxysubsubsection{\texorpdfstring{myserver()}{myserver()}}
+{\footnotesize\ttfamily myserver\+::myserver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+myserver Конструктор 
+
+\mbox{\Hypertarget{classmyserver_a074f8ee857234456b6369228171f87f7}\label{classmyserver_a074f8ee857234456b6369228171f87f7}} 
+\index{myserver@{myserver}!````~myserver@{$\sim$myserver}}
+\index{````~myserver@{$\sim$myserver}!myserver@{myserver}}
+\doxysubsubsection{\texorpdfstring{$\sim$myserver()}{~myserver()}}
+{\footnotesize\ttfamily myserver\+::$\sim$myserver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classmyserver_a0ead7e6ac76160295e6d4955362c1372}\label{classmyserver_a0ead7e6ac76160295e6d4955362c1372}} 
+\index{myserver@{myserver}!incomingConnection@{incomingConnection}}
+\index{incomingConnection@{incomingConnection}!myserver@{myserver}}
+\doxysubsubsection{\texorpdfstring{incomingConnection}{incomingConnection}}
+{\footnotesize\ttfamily void myserver\+::incoming\+Connection (\begin{DoxyParamCaption}\item[{qintptr}]{socket\+Descriptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Виртуальная функция из класса Qtcp\+Server, она вызывается, когда доспутно новое соединение. Внутри функции создается сокет и ему устанавливается дескриптор, полученный как параметр. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em socket\+Descriptor} & дескриптор сокета \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmyserver_a667c57294dd0c9573b9615840d3ff7aa}\label{classmyserver_a667c57294dd0c9573b9615840d3ff7aa}} 
+\index{myserver@{myserver}!sockDisc@{sockDisc}}
+\index{sockDisc@{sockDisc}!myserver@{myserver}}
+\doxysubsubsection{\texorpdfstring{sockDisc}{sockDisc}}
+{\footnotesize\ttfamily void myserver\+::sock\+Disc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classmyserver_a22c4dbce53178b0e799df2bb5bf384e8}\label{classmyserver_a22c4dbce53178b0e799df2bb5bf384e8}} 
+\index{myserver@{myserver}!sockReady@{sockReady}}
+\index{sockReady@{sockReady}!myserver@{myserver}}
+\doxysubsubsection{\texorpdfstring{sockReady}{sockReady}}
+{\footnotesize\ttfamily void myserver\+::sock\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classmyserver_ac0262beea1a4f65f458bb2e022be899f}\label{classmyserver_ac0262beea1a4f65f458bb2e022be899f}} 
+\index{myserver@{myserver}!startServer@{startServer}}
+\index{startServer@{startServer}!myserver@{myserver}}
+\doxysubsubsection{\texorpdfstring{startServer}{startServer}}
+{\footnotesize\ttfamily void myserver\+::start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Вызывается в методе main при запуске приложения. В методе создается экзмепляр QSql\+Database. Устнавливается название БД. После этого идут 7 запросов к этой БД, которые создают таблицы, если он не созданы (создание таблиц происходит, когда программа впервые запускается на этом компьютере). 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Documents/\+Student\+\_\+rates\+\_\+server/server/\mbox{\hyperlink{server_8h}{server.\+h}}\item 
+Documents/\+Student\+\_\+rates\+\_\+server/server/\mbox{\hyperlink{server_8cpp}{server.\+cpp}}\end{DoxyCompactItemize}

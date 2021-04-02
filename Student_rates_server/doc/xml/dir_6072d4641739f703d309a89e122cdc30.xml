@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="ru">
+  <compounddef id="dir_6072d4641739f703d309a89e122cdc30" kind="dir">
+    <compoundname>C:/Users/Danila/Documents/Student_rates_server/server</compoundname>
+    <innerfile refid="server_8cpp">server.cpp</innerfile>
+    <innerfile refid="server_8h">server.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Danila/Documents/Student_rates_server/server/"/>
+  </compounddef>
+</doxygen>

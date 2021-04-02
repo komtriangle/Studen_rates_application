@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Приложение по учету успеваемости студентов(серверная часть): Исходный файл Documents/Student_rates_server/server/server.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Приложение по учету успеваемости студентов(серверная часть)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_87e0a54888a4e6058014138a00467d3f.html">Student_rates_server</a></li><li class="navelem"><a class="el" href="dir_f7c8d6feed019affbbbac7d9835ecfd6.html">server</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">server.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="server_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MYSERVER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MYSERVER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QJsonDocument&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QJsonParseError&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QSqlError&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QTcpServer&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QSqlDatabase&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QSqlQuery&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QDir&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classmyserver.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmyserver.html">myserver</a>: <span class="keyword">public</span> QTcpServer{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classmyserver.html#ac63e26411d9ab3ac8dd69a1e31095989">myserver</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classmyserver.html#a074f8ee857234456b6369228171f87f7">~myserver</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmyserver.html#ac0262beea1a4f65f458bb2e022be899f">startServer</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmyserver.html#a0ead7e6ac76160295e6d4955362c1372">incomingConnection</a>(qintptr socketDescriptor);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmyserver.html#a22c4dbce53178b0e799df2bb5bf384e8">sockReady</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmyserver.html#a667c57294dd0c9573b9615840d3ff7aa">sockDisc</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> selectGroups();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> getAllStudents();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> getStudentsFromGroup(QString group_Id);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> insertRate(QString Student_Id, QString Lesson_Id, QString Rate);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> getRatesForStudentAndLesson(QString Student_Id, QString Lesson_Id);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> authorization(QString login, QString password);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> getAllRatesForGroupAndCourse(QString Group_Id, QString Course_Id);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> getLessons(QString Group_Id, QString Course_Id);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> getGroupsForAddLesson();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> getCoursesForAddLesson(QString group_Id);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> AddLesson(QString Group_Id, QString Course_Id, QString Date);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">void</span> getCoursesForStudent(QString student_Id);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> getLessonForStudentAndCourse(QString Student_Id, QString Course_Id);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    QTcpSocket* socket;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    QSqlDatabase db;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;};</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmyserver_html"><div class="ttname"><a href="classmyserver.html">myserver</a></div><div class="ttdoc">Класс принимает запросы от клиента, делает запросы к БД, отправляет клиенту ответ</div><div class="ttdef"><b>Definition:</b> server.h:18</div></div>
+<div class="ttc" id="aclassmyserver_html_a074f8ee857234456b6369228171f87f7"><div class="ttname"><a href="classmyserver.html#a074f8ee857234456b6369228171f87f7">myserver::~myserver</a></div><div class="ttdeci">~myserver()</div><div class="ttdef"><b>Definition:</b> server.cpp:5</div></div>
+<div class="ttc" id="aclassmyserver_html_a0ead7e6ac76160295e6d4955362c1372"><div class="ttname"><a href="classmyserver.html#a0ead7e6ac76160295e6d4955362c1372">myserver::incomingConnection</a></div><div class="ttdeci">void incomingConnection(qintptr socketDescriptor)</div><div class="ttdoc">Виртуальная функция из класса QtcpServer, она вызывается, когда доспутно новое соединение....</div><div class="ttdef"><b>Definition:</b> server.cpp:66</div></div>
+<div class="ttc" id="aclassmyserver_html_a22c4dbce53178b0e799df2bb5bf384e8"><div class="ttname"><a href="classmyserver.html#a22c4dbce53178b0e799df2bb5bf384e8">myserver::sockReady</a></div><div class="ttdeci">void sockReady()</div><div class="ttdef"><b>Definition:</b> server.cpp:74</div></div>
+<div class="ttc" id="aclassmyserver_html_a667c57294dd0c9573b9615840d3ff7aa"><div class="ttname"><a href="classmyserver.html#a667c57294dd0c9573b9615840d3ff7aa">myserver::sockDisc</a></div><div class="ttdeci">void sockDisc()</div><div class="ttdef"><b>Definition:</b> server.cpp:482</div></div>
+<div class="ttc" id="aclassmyserver_html_ac0262beea1a4f65f458bb2e022be899f"><div class="ttname"><a href="classmyserver.html#ac0262beea1a4f65f458bb2e022be899f">myserver::startServer</a></div><div class="ttdeci">void startServer()</div><div class="ttdoc">Вызывается в методе main при запуске приложения. В методе создается экзмепляр QSqlDatabase....</div><div class="ttdef"><b>Definition:</b> server.cpp:10</div></div>
+<div class="ttc" id="aclassmyserver_html_ac63e26411d9ab3ac8dd69a1e31095989"><div class="ttname"><a href="classmyserver.html#ac63e26411d9ab3ac8dd69a1e31095989">myserver::myserver</a></div><div class="ttdeci">myserver()</div><div class="ttdoc">myserver Конструктор</div><div class="ttdef"><b>Definition:</b> server.cpp:4</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+</small></address>
+</body>
+</html>
